@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 
-import { RecettesComponent} from './livre-recettes/recettes.component';
+import { LivreRecettesComponent} from './livre-recettes/livre.recettes.component';
 import { HeaderComponent } from './header/header.component';
 import { ListeRecettesComponent } from './livre-recettes/liste-recettes/liste-recettes.component';
 import { DetailRecetteComponent } from './livre-recettes/detail-recette/detail-recette.component';
@@ -17,7 +17,7 @@ import { ListeCoursesEditeurComponent } from './liste-courses/liste-courses-edit
 @NgModule({
   declarations: [
     AppComponent,
-    RecettesComponent,
+    LivreRecettesComponent,
     HeaderComponent,
     ListeRecettesComponent,
     DetailRecetteComponent,
