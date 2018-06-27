@@ -7,6 +7,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
+
     <a
     href="#" class="list-group-item clearfix"
     *ngFor="let uneRecette of recettes">
@@ -16,7 +17,12 @@
         <p class="list-group-item-text">{{uneRecette.description}}</p>
       </div>
       <span class="pull-right">
-        <img src="" alt="" class="img-responsive" style="max-height: 50px;">
+       <!-- src="{{uneRecette.cheminImage}}"  ou [src] = "uneRecette.cheminImage" est possible-->
+        <img
+        [src] = "uneRecette.cheminImage"
+        alt="{{uneRecette.nom}}"
+        class="img-responsive"
+        style="max-height: 50px;" >
       </span>
     </a>
 
