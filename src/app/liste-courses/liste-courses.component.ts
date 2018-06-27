@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./liste-courses.component.css']
 })
 export class ListeCoursesComponent implements OnInit {
+  ingredients = [];
 
   constructor() { }
 
