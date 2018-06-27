@@ -1,11 +1,11 @@
 export class Ingredient {
 
   public nom: string;
-  public quantité: number;
+  public quantite: number;
 
-  contructeur (nom: string , quantité: number) {
+  constructor (nom: string , quantite: number) {
     this.nom = nom ;
-    this.quantité = quantité;
+    this.quantite = quantite;
   }
 }
 

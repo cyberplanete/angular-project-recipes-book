@@ -1,3 +1,4 @@
+import { Ingredient } from './../dossierPartagé/ingredient.modele';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./liste-courses.component.css']
 })
 export class ListeCoursesComponent implements OnInit {
-  ingredients = [];
+
+  ingredients:  Ingredient[] = [new Ingredient('Salade' , 200), new Ingredient('Tomate' , 20)];
 
   constructor() { }
 
