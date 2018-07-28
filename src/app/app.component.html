@@ -1,3 +1,5 @@
-<app-header></app-header>
-<app-livre-recettes></app-livre-recettes>
-<app-liste-courses></app-liste-courses>
+<!-- Reception de header l element selectionné du menu. la methode surNavigation permet de déterminer l'element selectionné  et affiche le composant
+livre de recettes ou liste de courses-->
+<app-header (caracteristiqueSelectionne)="surNavigation($event)"></app-header>
+<app-livre-recettes *ngIf="chargeCaracteristique === 'menuRecettes'"></app-livre-recettes>
+<app-liste-courses *ngIf="chargeCaracteristique === 'menuListe-course'"></app-liste-courses>

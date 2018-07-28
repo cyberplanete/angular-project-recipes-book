@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  chargeCaracteristique = 'menuRecettes';
+
+  surNavigation(caracteristique: string) {
+
+    this.chargeCaracteristique = caracteristique;
+  }
 }
